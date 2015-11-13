@@ -18,15 +18,16 @@
 
 package de.tavendo.autobahn;
 
+import android.os.HandlerThread;
+import android.util.Log;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+
+import org.apache.http.message.BasicNameValuePair;
+
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
-
-import org.apache.http.message.BasicNameValuePair;
-import org.codehaus.jackson.type.TypeReference;
-
-import android.os.HandlerThread;
-import android.util.Log;
 
 public class WampConnection extends WebSocketConnection implements Wamp {
 
